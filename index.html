@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>《论语》人格测试</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background: #f9f6f1;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      color: #5a3e1b;
+    }
+    .question {
+      margin: 20px 0;
+      padding: 15px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #8b5e3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #704727;
+    }
+    #result {
+      margin-top: 30px;
+      padding: 20px;
+      background: #fff7e6;
+      border-left: 6px solid #d4a373;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>《论语》人格测试</h1>
+  <h3>穿越千年，解锁你的儒家灵魂人格！</h3>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. 小组完成一项大型课题，你更愿意承担什么角色？</p>
+      <label><input type="radio" name="q1" value="4"> A. 总体规划者，把握方向与关键决策</label><br>
+      <label><input type="radio" name="q1" value="3"> B. 细致执行者，默默完善细节、追求完美</label><br>
+      <label><input type="radio" name="q1" value="2"> C. 行动先锋，带头冲刺、突破难点</label><br>
+      <label><input type="radio" name="q1" value="1"> D. 外交联络员，协调资源、沟通内外</label>
+    </div>
+
+    <div class="question">
+      <p>2. 一场讨论中，大家观点冲突、僵持不下，你会？</p>
+      <label><input type="radio" name="q2" value="4"> A. 提出新问题，引导大家看到本质</label><br>
+      <label><input type="radio" name="q2" value="3"> B. 平和融合，提出折中方案</label><br>
+      <label><input type="radio" name="q2" value="2"> C. 明确表态，力挺一方</label><br>
+      <label><input type="radio" name="q2" value="1"> D. 以逻辑和例子说服大家</label>
+    </div>
+
+    <div class="question">
+      <p>3. 你如何看待知识或道理？</p>
+      <label><input type="radio" name="q3" value="4"> A. 融会贯通，举一反三</label><br>
+      <label><input type="radio" name="q3" value="3"> B. 学习是一种内在快乐</label><br>
+      <label><input type="radio" name="q3" value="2"> C. 知道了就要做到</label><br>
+      <label><input type="radio" name="q3" value="1"> D. 学以致用，解决实际问题</label>
+    </div>
+
+    <div class="question">
+      <p>4. 好朋友遭遇挫折，你会怎样做？</p>
+      <label><input type="radio" name="q4" value="4"> A. 分析原因，鼓励思考</label><br>
+      <label><input type="radio" name="q4" value="3"> B. 陪伴支持，给安心空间</label><br>
+      <label><input type="radio" name="q4" value="2"> C. 立刻帮忙解决，甚至出头</label><br>
+      <label><input type="radio" name="q4" value="1"> D. 调动资源，提供实际帮助</label>
+    </div>
+
+    <div class="question">
+      <p>5. 你被别人误会时，第一反应是？</p>
+      <label><input type="radio" name="q5" value="4"> A. 不急于辩解，让事实说话</label><br>
+      <label><input type="radio" name="q5" value="3"> B. 自我反思，有则改之</label><br>
+      <label><input type="radio" name="q5" value="2"> C. 直接沟通，当面澄清</label><br>
+      <label><input type="radio" name="q5" value="1"> D. 幽默化解，巧妙回应</label>
+    </div>
+
+    <div class="question">
+      <p>6. 你更偏爱哪种状态？</p>
+      <label><input type="radio" name="q6" value="4"> A. 沉迷探索真理</label><br>
+      <label><input type="radio" name="q6" value="3"> B. 简单生活，内心充实</label><br>
+      <label><input type="radio" name="q6" value="2"> C. 挑战自我，享受竞争</label><br>
+      <label><input type="radio" name="q6" value="1"> D. 事业有成，生活优雅</label>
+    </div>
+
+    <div class="question">
+      <p>7. 老师布置难任务，你会？</p>
+      <label><input type="radio" name="q7" value="4"> A. 推演方法，找最优解</label><br>
+      <label><input type="radio" name="q7" value="3"> B. 耐心钻研，不急不躁</label><br>
+      <label><input type="radio" name="q7" value="2"> C. 迅速行动，边做边改</label><br>
+      <label><input type="radio" name="q7" value="1"> D. 借助合作，高效完成</label>
+    </div>
+
+    <div class="question">
+      <p>8. 你认为一个人最重要的品质是什么？</p>
+      <label><input type="radio" name="q8" value="4"> A. 智慧与格局</label><br>
+      <label><input type="radio" name="q8" value="3"> B. 仁德与修养</label><br>
+      <label><input type="radio" name="q8" value="2"> C. 勇气与担当</label><br>
+      <label><input type="radio" name="q8" value="1"> D. 诚信与通达</label>
+    </div>
+
+    <button type="button" onclick="calculateResult()">提交测试</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateResult() {
+      let total = 0;
+      for (let i = 1; i <= 8; i++) {
+        const q = document.querySelector('input[name="q' + i + '"]:checked');
+        if (q) total += parseInt(q.value);
+      }
+
+      let resultText = "";
+      if (total >= 26) {
+        resultText = "🎓 孔子——循循善诱的启示者：胸怀广阔，智慧深远，是天生的导师型人格。";
+      } else if (total >= 21) {
+        resultText = "🌱 颜回——内心丰盈的悟道者：性格内敛，专注自省，能在简单中体会深意。";
+      } else if (total >= 16) {
+        resultText = "⚔️ 子路——勇毅果敢的行动者：勇敢热情，说到做到，是团队的冲锋者。";
+      } else {
+        resultText = "💼 子贡——通达世事的成就者：聪明灵活，善于沟通与经营，儒商精神的代表。";
+      }
+
+      document.getElementById("result").innerText = "你的总分是：" + total + "\n" + resultText;
+    }
+  </script>
+</body>
+</html>
